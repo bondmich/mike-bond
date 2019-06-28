@@ -1,0 +1,13 @@
+load and prepare the game level (score is set to 0, lives is set to 5, the enemies are generated and placed in the scene, the main character is placed in the scene, the ammo is set to 100, and finally the scene is rendered)
+start playing soundtrack music
+ 
+do main loop
+    if (the user pressed a key) then do the specific action depending on the key (e.g. move main character, jump main character, shot the weapon)
+    calculate the AI and move + animate the enemies
+    render scene and the UI (score, lives, ammo, etc)
+while (the main character still has lives) or (the main character didn't finish the level) or (the user didn't exit or restart the game)
+ 
+if (the main character died) then display game lost screen
+else if (the main character won) then display game won screen
+else if (the main user restarted the game) then a new game using the same level is initiated
+else display the game main menu
